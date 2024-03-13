@@ -1,0 +1,200 @@
+:root {
+  --primary-1: #0a2740ff;
+  --accent: #f4a0b1ff;
+  --light-accent: rgb(255, 198, 219);
+  --secondary-1: #f3f7fdff;
+  --primary-2: #2c5983ff;
+  --alternative: #3f273dff;
+  --font: Ubuntu, "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+html,
+body {
+  margin: 0;
+  background-color: var(--primary-1);
+  user-select: none;
+}
+
+/* Header */
+body {
+  text-align: center;
+  font-family: var(--font);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 50vw;
+  max-width: 250px;
+  margin-top: 30px;
+
+  filter: drop-shadow(0px 0px 70px var(--secondary-1));
+}
+
+h1 {
+  margin-top: 5px;
+
+  color: var(--secondary-1);
+
+  font-weight: 500;
+  font-size: 30px;
+}
+
+/* Create Section */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.create-cont {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+#create-text-el {
+  height: 100px;
+  margin: 0;
+  padding: 12px 25px;
+
+  background-color: var(--primary-2);
+  border: none;
+  border-radius: 18px 18px 0 0;
+  resize: none;
+
+  color: var(--secondary-1);
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+#create-text-el::placeholder,
+.from-to-cont input::placeholder {
+  color: var(--secondary-1);
+  opacity: 0.5;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--accent);
+}
+
+.from-to-cont {
+  height: 40px;
+
+  margin-top: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.from-to-cont input {
+  width: 0;
+  flex-grow: 1;
+
+  background-color: var(--primary-2);
+  border: none;
+
+  color: var(--secondary-1);
+  text-align: center;
+  font-family: inherit;
+  font-weight: 100;
+  font-size: 16px;
+}
+
+#from-text-el {
+  border-radius: 0 0 0 18px;
+}
+
+#to-text-el {
+  border-radius: 0 0 18px 0;
+}
+
+#publish-btn {
+  height: 50px;
+  margin-top: 10px;
+
+  background-color: var(--accent);
+  border: none;
+  border-radius: 18px;
+
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+
+  transition: all ease 0.4s;
+}
+
+#publish-btn:hover {
+  background-color: var(--secondary-1);
+  box-shadow: 0 0 15px var(--secondary-1);
+}
+
+#publish-btn:active {
+  scale: 0.9;
+  transition: none;
+}
+
+/* Posts Section */
+.posts-cont {
+  color: var(--primary-1);
+  text-align: left;
+}
+
+.posts-cont h2 {
+  margin-top: 30px;
+
+  color: var(--secondary-1);
+  text-align: center;
+  font-size: 16px;
+}
+
+#posts-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.posts-cont li {
+  width: 260px;
+  margin: 10px 30px;
+  padding: 18px 15px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background-color: var(--secondary-1);
+
+  font-size: 14px;
+}
+
+.posts-cont h3,
+p,
+div {
+  margin: 0;
+}
+
+.posts-cont div p {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.posts-cont div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer */
+footer {
+  margin: 25px;
+  color: var(--secondary-1);
+  font-size: 14px;
+}
+
+/* Utility */
+.posts-cont .liked {
+  background-color: var(--light-accent);
+}

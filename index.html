@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tell me What!?</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./assets/img/logo-noback-512x512.png"
+        alt="app logo. two girls talking"
+      />
+      <h1>Tell me WHAT!?</h1>
+    </header>
+
+    <main>
+      <section class="create-cont">
+        <textarea
+          id="create-text-el"
+          placeholder="Tell me what here"
+        ></textarea>
+        <div class="from-to-cont">
+          <input type="text" id="from-text-el" placeholder="From" />
+          <input type="text" id="to-text-el" placeholder="To" />
+        </div>
+        <button id="publish-btn">Publish</button>
+      </section>
+      <section class="posts-cont">
+        <h2>· Endorsements ·</h2>
+        <ul id="posts-ul">
+          <li class="liked">
+            <h3>➡️ Per</h3>
+            <p>
+              Hello Genís, I've seen your webapps. Like those so
+              much. 👌 My favourite is Item List. So I can go shopping now.
+              Thank you!!👏👏 Tam
+            </p>
+            <div>
+              <h3>Genís</h3>
+              <p>&#9829 4</p>
+            </div>
+          </li>
+          <li>
+            <h3>➡️ Francisco</h3>
+            <p>
+              Hello Genís, I've seen you made some webapps. I like those so
+              much. 👌 Item List.
+            </p>
+            <div>
+              <h3>Eugenio</h3>
+              <p>&#9829 24</p>
+            </div>
+          </li>
+          <li>
+            <h3>➡️ Genís</h3>
+            <p>
+              Hello Genís, I've seen you made some webapps. I like those so
+              much. 👌 My favourite is Item List. So I can go shopping now.
+              Thank you!!👏👏 Tam
+            </p>
+            <div>
+              <h3>Tamara</h3>
+              <p>&#9829 255</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer><p>Made by Genís Muner | 2024 | &copy</p></footer>
+    <script type="module" src="./scripts/script.js"></script>
+  </body>
+</html>
