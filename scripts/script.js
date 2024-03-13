@@ -18,9 +18,11 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebas
 import {
   getDatabase,
   ref,
+  get,
+  child,
   push,
   onValue,
-  remove,
+  update,
 } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js"
 
 const firebaseConfig = {
@@ -79,7 +81,6 @@ onValue(postsRef, (snapshot) => {
       const post = posts[i][1]
       let liEl = document.createElement("li")
       liEl = appendLiContent(liEl, post)
-      // Add event listener. Likes functionality.
       postListEl.append(liEl)
     }
   } else {
